@@ -19,7 +19,7 @@
     }
     .column{
     	display: flex;
-	width: 750px;
+	width: 1500px;
     }
     .column div{
 	width: 50%;
@@ -35,6 +35,9 @@
 <body style="background-color:mintcream;">
     <h1>Joe&#8217;s Writing Portfolio</h1>
     <div class = "column">
+    	<button onclick = "unhide()">
+	    Click Here For Reflection
+    	</button>
 	    <div>
 	    <h3>Why Music, Why Now?</h3>
 	    <p>
@@ -130,9 +133,6 @@
 		<p> ME TESTING IT OUT </p>
 	</div>
     </div>
-    <button onclick = "unhide()">
-	    Click Here For Reflection
-    </button>
     <script>
 	    let side2 = document.getElementById("column2");
 	    function unhide(){
