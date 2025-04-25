@@ -28,11 +28,14 @@
     .column2{
 	visibility: hidden;
     }
+    .column2 div{
+	visibility: hidden;
+    }
 </style>
 
 <body style="background-color:mintcream;">
     <h1>Joe&#8217;s Writing Portfolio</h1>
-    <div column>
+    <div class = "column">
 	    <div>
 	    <h3>Why Music, Why Now?</h3>
 	    <p>
@@ -123,7 +126,7 @@
 		The time is now for reformation of the university, and much like Bambara says, the calls for change should come from the bottom. Students should be entirely invested in and a part of the university’s future, and they should call for a university that more closely represents the open institution of learning and support that lives inside many children’s imaginations. They should demand change and reform, because that is the only way that it will happen. College might be what you make it, but the institutions and administration at that college should better support you to make it yours.
     	    </p>
     	</div>
-	<div column2 id = "column2">
+	<div class = "column2" id = "column2">
 		<h3> Reflections </h3>
 		<p> ME TESTING IT OUT </p>
 	</div>
@@ -134,7 +137,7 @@
     <script>
 	    let side2 = document.getElementById("column2");
 	    function unhide(){
-		side2.visibility = visible;
+		side2.visibility = "visible";
 	    }
     </script>
 </body>
