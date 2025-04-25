@@ -47,7 +47,7 @@
     	<button onclick = "unhide()">
 	    Click Here For Reflection
     	</button>
-    <div class = "column">
+    <div class = "column",id = "column">
 	    <div>
 	    <h3>Why Music, Why Now?</h3>
 	    <p>
@@ -144,6 +144,10 @@
 	</div>
     </div>
     <script>
+	    let column = document.getElementById("column");
+	    var w = window.innerWidth;
+	    column.style.width = w;
+	    
 	    let side2 = document.getElementById("column2");
 	    function unhide(){
 		side2.style.visibility = "visible";
